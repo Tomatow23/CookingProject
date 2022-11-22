@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <title>Cooking Project</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="Recipe.html">Recipe</a>
+        </li>
+            </ul>
+        </div>
+      </nav>
+    <h1>Cooking Project!</h1>
+    <h3>Make New Recipe</h3>
+    <ul id ="item_list" class="list-group">
+    </ul>
+    <form>
+        <div class="mb-3"> 
+          <label for="recipeName" class="form-label">Recipe Name</label>
+          <input type="text" class="form-control" id="recipe_name" aria-describedby="recipe_name">
+        </div>
+        <div class="mb-3"> 
+            <label for="recipeName" class="form-label">Add Instruction</label>
+            <input type="text" class="form-control" id="item_name" aria-describedby="item_name">
+          </div>
+        <button type="button" class="btn btn-primary"  id="addItem">Add Recipe Item</button>
+        <button type="button" class="btn btn-primary" id="submitRecipe">Submit Recipe</button>
+      </form>
+
+
+      <div class="dropdown">
+        <button id="recipe_dropdown" class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+          Dropdown button
+        </button>
+        <ul id="recipe_dropdown_menu" class="dropdown-menu">
+          
+        </ul>
+      </div>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+      <script src="item.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
