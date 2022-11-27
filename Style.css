@@ -1,0 +1,21 @@
+body{
+}
+h1{
+    width: 25vw;
+    margin: 0 auto;
+    margin-bottom: 8px;
+    text-align: center;
+    
+}
+ul{
+    list-style-type: none;
+}
+li.list-group-item{
+    width:25vw;
+    margin: 0 auto;
+    align-items: center;
+    border-style: solid;
+    border-color: black;
+    text-align: center;
+    font-size: 24px;
+}
