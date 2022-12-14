@@ -51,9 +51,9 @@ function save(recipe_name, recipeObj){
     sessionStorage.setItem(recipe_name, JSON.stringify(recipeObj));
 }
 function getSave(){
+    sessionStorage.removeItem("IsThisFirstTime_Log_From_LiveServer");
     for(let i = 0; i < sessionStorage.length; i++){
         let key = sessionStorage.key(i);
-        sessionStorage.removeItem("IsThisFirstTime_Log_From_LiveServer");
         let item = sessionStorage.getItem(key);
         // console.log(item);
         let pObj = JSON.parse(item);

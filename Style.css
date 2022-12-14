@@ -1,15 +1,57 @@
 body{
-}
-h1{
-    width: 25vw;
-    margin: 0 auto;
-    margin-bottom: 8px;
-    text-align: center;
+    background-color: #211F1F;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     
 }
+
 ul{
     list-style-type: none;
+    text-align: center;
 }
+ul li{
+    color: #211F1F;
+    text-align: center;
+    font-size: 18px;
+    
+}
+
+nav{
+    background-color: #FFCD18;
+    height: 2vw;
+}
+#ulList{
+    list-style-type: none;
+}
+#ulList li{
+    display: inline;
+    margin: 8px;
+    border-bottom: 1px solid #211F1F;
+    padding: 8px;
+}
+#ulList li a{
+    text-decoration: none;
+    color: #211F1F;
+    font-size: 18px;
+}
+#ulList li:hover{
+    background-color: white;
+}
+h1{
+    width: 80vw;
+    margin: 0 auto;
+    margin-bottom: 32px;
+    color:white;
+    
+}
+#diary{
+    color:#FFCD18;
+}
+#subHeader{
+    color:white;
+    text-align: center;
+}
+
+
 li.list-group-item{
     width:25vw;
     margin: 0 auto;
@@ -18,4 +60,129 @@ li.list-group-item{
     border-color: black;
     text-align: center;
     font-size: 24px;
+    background-color: #211F1F;
+}
+
+#recipeInput{
+    margin: 0 auto;
+    width: 25vw;
+    
+}
+#recipe_name{
+    font-size: 24px;
+    color: #211F1F;
+    border: 1px solid white;
+
+}
+#instructionInput{
+    margin: 0 auto;
+    width: 50vw;
+    color: #211F1F;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#recipeNameMain{
+    background-color: #FFCD18;
+    font-size: 16px;
+}
+#addItem {
+    margin: 8px;
+    background-color: #FFCD18;
+    color: #211F1F;
+}
+#submitRecipe{
+    margin: 8px;
+    margin-bottom: 16px;
+    background-color: #FFCD18;
+    color: #211F1F;
+}
+
+
+#dropdown{
+    display: flex;
+}
+#recipe_dropdown{
+    margin: 0 auto;
+    text-align: center;
+    background-color: #FFCD18;
+    color: #211F1F;
+    font-size: 18px;
+
+}
+
+#recipe_name_main{
+    text-align: center;
+    background-color: #FFCD18;
+    color:#211F1F;
+    border: solid 1px white;
+    width: 20vw;
+}
+#main_footer{
+    background-color: #FFCD18;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 2.5rem;
+}
+#main_footer p{
+    position: absolute;
+    bottom: 0;
+}
+#recipe_container{
+    padding: 16px;
+    background-image: url(background1.jpg);
+    min-height: 50vh;
+}
+
+/* About*/
+
+#about_history{
+    color:#FFCD18;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 24px;
+    border-bottom: 1px solid #FFCD18;
+    max-width: 25vw;
+}
+#about_paragraph{
+    background-color: #FFCD18;
+    color: #211F1F;
+    text-align: center;
+    max-width: 25vw;
+    margin: 0 auto;
+    font-size: 18px;
+    padding: 24px;
+    border: solid 1px #211F1F;
+    margin-bottom: 24px;
+}
+#about_container{
+    padding-top: 24px;
+    background-image: url(3759.jpg);
+    width: 100vw;
+    height: 95vh;
+}
+#about_ul{
+    margin: 0 auto;
+    padding: 0px;
+    max-width: 30vw;
+    text-decoration: none;
+    list-style-type: none; 
+}
+#about_ul li{
+    margin: auto;
+    background-color: #FFCD18;
+    color: #211F1F;
+    border-bottom: solid 1px #211F1F;
+    padding: 5px;
+    margin: 0px;
+}
+#item_list li{
+    color: #FFCD18;
+    width: 20vw;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 8px;
 }

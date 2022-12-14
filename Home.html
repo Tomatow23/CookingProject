@@ -9,40 +9,45 @@
     <title>Cooking Project</title>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg bg-light">
-        <div class="container-fluid">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="Recipe.html">Recipe</a>
-        </li>
-            </ul>
-        </div>
-      </nav>
-    <h1>Cooking Project!</h1>
-    <h3>Make New Recipe</h3>
-    <ul id ="item_list" class="list-group">
+  <nav>
+    <ul id="ulList">
+      <li><a href="Home.html">Create Recipe</a></li>
+      <li><a href="Recipe.html">View Recipes</a></li>
+      <li><a href="about.html">Our Mission</a></li>
     </ul>
+    </nav>
+    <div id="home_container">
+    <h1>Cooking <span id="diary">Diary</span></h1>
+    <h3 id="subHeader">Make A New Recipe</h3>
+   
     <form>
-        <div class="mb-3"> 
-          <label for="recipeName" class="form-label">Recipe Name</label>
+        <div id="recipeInput" class="input-group input-group-sm mb-3"> 
+          <label for="recipeName" class="form-label"></label>
+          <span class="input-group-text" id="recipeNameMain" id="inputGroup-sizing-sm">Recipe Name</span>
           <input type="text" class="form-control" id="recipe_name" aria-describedby="recipe_name">
         </div>
-        <div class="mb-3"> 
-            <label for="recipeName" class="form-label">Add Instruction</label>
+        <div id="instructionInput" class="input-group input-group-sm mb-3"> 
+            <label for="recipeName" class="form-label"></label>
+            <span class="input-group-text" id="recipeNameMain" id="inputGroup-sizing-sm">Add Instruction</span>
             <input type="text" class="form-control" id="item_name" aria-describedby="item_name">
           </div>
         <button type="button" class="btn btn-primary"  id="addItem">Add Recipe Item</button>
         <button type="button" class="btn btn-primary" id="submitRecipe">Submit Recipe</button>
       </form>
-
-
-      <div class="dropdown">
+      
+      <ul id ="item_list" class="list-group">
+      </ul>
+      <div id="dropdown" class="dropdown">
         <button id="recipe_dropdown" class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-          Dropdown button
+          Recipes
         </button>
         <ul id="recipe_dropdown_menu" class="dropdown-menu">
         </ul>
       </div>
+    </div>
+      <footer id="main_footer">
+        <p>Created and Designed by Nathan Dunn, Joy Poling, Sara Smith, Ben Wittkopp, Kyle Bishop, Margaret K McCarren &copy; 2022</p>
+      </footer>
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
       <script src="item.js"></script>
     <script src="main.js"></script>

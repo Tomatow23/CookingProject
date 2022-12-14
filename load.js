@@ -6,9 +6,9 @@
 
 
 function getSave(){
+    sessionStorage.removeItem("IsThisFirstTime_Log_From_LiveServer");
     for(let i = 0; i < sessionStorage.length; i++){
         let key = sessionStorage.key(i);
-        sessionStorage.removeItem("IsThisFirstTime_Log_From_LiveServer");
         let item = sessionStorage.getItem(key);
         // console.log(item);
         let pObj = JSON.parse(item);
@@ -19,7 +19,7 @@ function updateDropDownList(key){
     const ul = document.getElementById("recipe_dropdown_menu");
     const li = document.createElement("li");
     const a = document.createElement("a");
-    const h1 = document.getElementById("recipe_name");
+    const h1 = document.getElementById("recipe_name_main");
     ul.append(li);
     li.innerText = key
     li.onclick = function(){
